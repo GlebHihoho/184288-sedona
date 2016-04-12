@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Gleb Motuz](https://up.htmlacademy.ru/htmlcss/13/user/184288).
-
+* Наставник: [Лиза Позднякова] (https://htmlacademy.ru/profile/id5608).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
