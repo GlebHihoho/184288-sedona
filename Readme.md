@@ -1,7 +1,6 @@
 # Личный проект «Седона»
 
 * Студент: [Gleb Motuz](https://up.htmlacademy.ru/htmlcss/13/user/184288).
-* Наставник: `Неизвестно`.
 
 ---
 
