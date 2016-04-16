@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="header-container">
-        <ul class="header-menu">
+   <div class="conteiner">
+    <header class="header-conteiner">
+        <ul>
             <li>
                 <a href="#">Информация</a>
             </li>
@@ -26,7 +28,7 @@
             </li>
         </ul>
     </header>
-    <div class="banner">
+    <div class="main-banner">
         <div class="banner-text-1">
             <span>Welcome</span>
         </div>
@@ -40,94 +42,96 @@
             <span>''Because the Grand Canyon sucks''</span>
         </div>
     </div>
-    <div class="description-header">
-        <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-        <p>Рассмотрим 5 причин, по коротым Седона круче, чем Гранд Каньон</p>
-    </div>
-    <div class="description-1">
-        <div class="item item-1">
-            <h3>Настояший городок</h3>
-            <p>№1</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+    <main>
+        <div class="description-1">
+            <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+            <p>Рассмотрим 5 причин, по коротым Седона круче, чем Гранд Каньон</p>
         </div>
-        <div class="description-banner">
-            <img src="http://placehold.it/512x256">
-        </div>
-    </div>
-    <div class="description-1-footer">
-        <div class="item house">
-            <img src="http://placehold.it/75x72">
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </div>
-        <div class="item food">
-            <img src="http://placehold.it/75x72">
-            <h2>Еда</h2>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </div>
-        <div class="item gift">
-            <img src="http://placehold.it/75x72">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-        </div>
-    </div>
-    <div class="description-2">
-        <div class="description-banner">
-            <img src="http://placehold.it/512x256">
-        </div>
-        <div class="item item-2">
-            <h3>Там есть мост дьявола</h3>
-            <p>№2</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </div>
-    </div>
-    <div class="description-2-footer">
-        <div class="item">
-            <h3>Небольшая площадь</h3>
-            <p>№3</p>
-            <p>Все достопримечательности находятся очень близко</p>  
-        </div>
-        <div class="item">
-            <h3>Красивая дорога</h3>
-            <p>№4</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>  
-        </div>
-        <div class="item">
-            <h3>Мало туристов</h3>
-            <p>№5</p>
-            <p>Большинство едет в Гранд Коньон и толпится там</p>  
-        </div>
-    </div>
-    <div class="search">
-        <div class="search-header">
-            <h2>Заинтересовались?</h2>
-            <p>
-                Укажите наиболее предполагаемые даты поездки, и мы покажем вам лучшиепредложения 
-            гостиниц в Седоне
-            </p>
-            <div class="search-menu-header">
-                <h3>Поиск гостиницы в Седоне</h3>
+        <div class="description-2">
+            <div class="item">
+                <h3>Настояший городок</h3>
+                <p>№1</p>
+                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="description-banner">
+                <img src="http://placehold.it/512x256">
             </div>
         </div>
-        <div class="search-footer">
-            <div class="search-menu-conteiner">
-                <form action="#" method="get">
-                    <label for="date-start">Дата заезда:</label>
-                    <input type="date" id="date-start" value="24-04-2016" name="date-start">
-                <br>
-                    <label for="date-finish">Дата выезда:</label>
-                    <input type="date" id="date-finish" value="04-06-2016" name="date-finish">
-                <br>
-                    <label for="parents">Взрослые:</label>
-                    <input type="number" id="parents" value="2" name="parents" min="1" max="20">
-                    <label for="child">Дети:</label>
-                    <input type="number" id="child" value="0" name="child" min="0" max="20">
-                <br>
-                    <input type="submit" value="Найти">
-                </form>
+        <div class="description-3">
+            <div class="item house">
+                <img src="http://placehold.it/75x72">
+                <h3>Жильё</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+            <div class="item food">
+                <img src="http://placehold.it/75x72">
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="item gift">
+                <img src="http://placehold.it/75x72">
+                <h3>Сувениры</h3>
+                <p>Не только китайского, но и местного производства!</p>
             </div>
         </div>
-    </div>
+        <div class="description-4">
+            <div class="description-banner">
+                <img src="http://placehold.it/512x256">
+            </div>
+            <div class="item">
+                <h3>Там есть мост дьявола</h3>
+                <p>№2</p>
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+        </div>
+        <div class="description-5">
+            <div class="item">
+                <h3>Небольшая площадь</h3>
+                <p>№3</p>
+                <p>Все достопримечательности находятся очень близко</p>  
+            </div>
+            <div class="item">
+                <h3>Красивая дорога</h3>
+                <p>№4</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>  
+            </div>
+            <div class="item">
+                <h3>Мало туристов</h3>
+                <p>№5</p>
+                <p>Большинство едет в Гранд Коньон и толпится там</p>  
+            </div>
+        </div>
+        <div class="search">
+            <div class="search-header">
+                <h2>Заинтересовались?</h2>
+                <p>
+                    Укажите наиболее предполагаемые даты поездки, и мы покажем вам лучшие предложения 
+                гостиниц в Седоне
+                </p>
+                <div class="search-menu-header">
+                    <h3>Поиск гостиницы в Седоне</h3>
+                </div>
+            </div>
+            <div class="search-footer">
+                <div class="search-menu-conteiner">
+                    <form action="#" method="get">
+                        <label for="date-start">Дата заезда:</label>
+                        <input type="date" id="date-start" value="24-04-2016" name="date-start">
+                    <br>
+                        <label for="date-finish">Дата выезда:</label>
+                        <input type="date" id="date-finish" value="04-06-2016" name="date-finish">
+                    <br>
+                        <label for="parents">Взрослые:</label>
+                        <input type="number" id="parents" value="2" name="parents" min="1" max="20">
+                        <label for="child">Дети:</label>
+                        <input type="number" id="child" value="0" name="child" min="0" max="20">
+                    <br>
+                        <input type="submit" value="Найти">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="footer-container">
         <div class="footer-hashtag">
             <p>#VisitSedona</p>
@@ -142,5 +146,6 @@
             <a class="btn" href="#">HTML Academy</a>
         </div>
     </footer>
+   </div>
   </body>
 </html>
