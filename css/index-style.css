@@ -1,6 +1,11 @@
 body {
     width: auto;
     
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
     font-family: PTSans;
     font-size: 14px;
     font-weight: bold;
@@ -8,6 +13,11 @@ body {
     
     color: #000000;
     background-color: #f2f2f2;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
 }
 
 h1 {
@@ -30,4 +40,204 @@ h2 {
     box-shadow: 
         -5px -5px 5px #dbdbdb,
         5px 5px 5px #dbdbdb;
+}
+
+.header-conteiner {
+    font-size: 0px;
+}
+
+.header-conteiner > ul {
+    margin-left: 0; 
+    padding-left: 0;
+}
+
+.header-conteiner > ul > li {
+    display: inline-block;
+    box-sizing: border-box;
+    
+    width: 239px;
+    height: 56px;
+    padding-top: 20px;
+    
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-conteiner > ul > li:nth-child(3) {
+    width: 244px;
+    padding-top: 0px;
+}
+
+.main-banner {
+    outline: 5px solid black;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.description-header {
+    height: 216px;
+    text-align: center;
+    
+    margin-top: 0px;
+    padding-top: 0px;
+    
+    outline: 5px solid green;
+}
+
+.description-header > h1 {
+    padding-top: 60px;
+    padding-bottom: 38px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 0px;
+    
+    outline: 5px solid blue;
+}
+
+.description-header > p {
+    font-size: 14px;
+    font-weight: 400;
+    
+    padding-top: 0px;
+    margin-top: 0px;
+    
+    outline: 5px solid red;
+}
+
+.description-item-1 {
+    outline: 5px solid yellow;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.description-item-1:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.description-item-1 > .item {
+    width: 400px;
+    height: 256px;
+    float: left;
+    background-color: #81b3d2;
+}
+
+.description-banner-2 {
+    width: 800px;
+    float: right;
+    outline: 5px solid red;
+    
+}
+
+.description {
+    outline: 5px solid black;
+    display: table;
+    height: 314px;
+}
+
+.description > .item {
+    display: table-cell;
+    outline: 5px solid gray;
+    width: 400px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.item > img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.description-item-2 {
+    outline: 5px solid red;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.description-item-2:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.description-item-2 > .item {
+    width: 400px;
+    height: 256px;
+    float: right;
+    background-color: #81b3d2;
+}
+
+.description-item-2 > .description-banner {
+    width: 800px;
+    float: left;
+    outline: 5px solid red;
+}
+
+.description-footer {
+    display: table;
+    outline: 5px solid yellow;
+    text-align: center;
+    height: 256px;
+    background-color: #eeeeee;
+}
+
+.description-footer > .item {
+    display: table-cell;
+    outline: 5px solid red;
+    width: 400px;
+}
+
+.search {
+    outline: 5px solid blue;
+}
+
+.search-header {
+    background-color: green;
+    text-align: center;
+    height: 314px;
+}
+
+.search-menu-header {
+    width: 568px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #766357;
+    
+}
+
+.search-footer {
+    background-image: url('../img/Sedona-map.jpg');
+    height: 473px;
+}
+
+.search-menu-conteiner {
+    width: 568px;
+    height: 395px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    
+}
+
+.search-menu-conteiner input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-container {
+    height: 120px;
+    display: table;
+}
+
+.footer-hashtag,
+.footer-social,
+.footer-copyright {
+    display: table-cell;
+    width: 400px;
+    text-align: center;
+    vertical-align: middle;
 }
