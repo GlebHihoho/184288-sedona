@@ -1,0 +1,33 @@
+body {
+    width: auto;
+    
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.conteiner {
+    width: 1200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: #ffffff; 
+    box-shadow: 
+        -5px -5px 5px #dbdbdb,
+        5px 5px 5px #dbdbdb;
+}
