@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Sedona-hotels</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index-style.css">
   </head>
   <body>
     <div class="conteiner">
@@ -17,7 +17,7 @@
             </li>
             <li class="header-logo">
                 <a href="index.html">
-                    <img src="http://placehold.it/100x50">
+                    <img src="img/Selona-Logo.png" width="67px" height="56px" alt="Sedona Logo">
                 </a>
             </li>
             <li>
@@ -54,8 +54,8 @@
               <input type="text" name="finish-cost" value="до 3000">
               <input type="range" name="start-cost" min="0" max="3000" value="0" id="start-cost">
               <input type="range" name="start-cost" min="3000" max="10000" value="3000">
+              <input type="submit" value="Показать">
           </div>
-          <input type="submit" value="Показать">
          </form>
       </div>
       <div class="results-list">
@@ -74,12 +74,13 @@
                   </li>
               </ul>
               <div class="reverse-results-list">
-                  <a class="reverse-up" href="#"></a>
-                  <a class="reverse-down" href="#"></a>
+                  <a class="reverse-up" href="#">UP</a>
+                  <a class="reverse-down" href="#">DOWN</a>
               </div>
+          </div>
               <div class="results">
-                  <div>
-                     <img src="http://placehold.it/125x75">
+                  <div class="results-item">
+                     <img src="img/Hotel-icon-1.jpg" width="135px" height="90px" alt="Home-1">
                      <div class="name-results">
                          <p>Amara resort & spa</p>
                          <span>Гостиница</span>
@@ -92,8 +93,8 @@
                          <span>Рейтинг: 8.5</span>
                      </div>
                   </div>
-                  <div>
-                     <img src="http://placehold.it/125x75">
+                  <div class="results-item">
+                     <img src="img/Hotel-icon-2.jpg" width="135px" height="90px" alt="Home-2">
                      <div class="name-results">
                          <p>Desert Quail Inn</p>
                          <span>Мотель</span>
@@ -106,8 +107,8 @@
                          <span>Рейтинг: 8.9</span>
                      </div>
                   </div>
-                  <div>
-                     <img src="http://placehold.it/125x75">
+                  <div class="results-item">
+                     <img src="img/Hotel-icon-3.jpg" width="135px" height="90px" alt="Home-3">
                      <div class="name-results">
                          <p>Villas At Poco Diablo</p>
                          <span>Апартаменты</span>
@@ -121,7 +122,6 @@
                      </div>
                   </div>
               </div>
-          </div>
       </div>
       <footer class="footer-container">
         <div class="footer-hashtag">
@@ -134,7 +134,9 @@
         </div>
         <div class="footer-copyright">
             <span>Website by</span>
-            <a class="btn" href="#">HTML Academy</a>
+            <a class="btn" href="#">
+                <img src="img/Academy-Logo.png" width="113px" height="39px" alt="Academy-Logo">
+            </a>
         </div>
       </footer>
     </div>

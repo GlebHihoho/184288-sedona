@@ -241,3 +241,112 @@ h2 {
     text-align: center;
     vertical-align: middle;
 }
+
+/*         Сетка hotels.html           */
+
+/*   -----------------------------  Меню поиска    ----------------------------- */
+
+.search-test {
+    outline: 5px solid blue;
+    width: 1200px;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.search-test::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.infrastructure,
+.property-type,
+.cost {
+    width: 398px;
+    margin: 0px;
+    padding: 0px; 
+    float: left;
+}
+
+/*   -----------------------------  Меню сортировки    ----------------------------- */
+
+.results-menu {
+    outline: 5px solid red;
+}
+
+.results-menu::after {
+    content: '';
+    display: table;
+    clear: both; 
+}
+
+.results-menu p,
+.results-menu span {
+    width: 100px;
+    float: left;
+    margin-top: 0px;
+}
+
+.sorting-results-list {
+    width: 900px;
+}
+
+.sorting-results-list > li {
+    display: inline-block;
+    float: left;
+}
+
+.reverse-results-list {
+    width: 290px;
+    float: right; 
+}
+
+/*   -----------------------------  Список найденного    ----------------------------- */
+
+.results {
+    outline: 5px solid green;
+}
+
+.results-item {
+    outline: 2px solid blue;
+    height: 150px;
+    display: block;
+}
+
+.results-item > img {
+    float: left;
+    border: 1px solid #ffffff;
+}
+
+
+.name-results {
+    outline: 2px solid red;
+    width: 500px;
+    float: left;
+}
+
+.rating {
+    width: 200px;
+    margin-top: 10px;
+    float: right;
+    text-align: center;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
