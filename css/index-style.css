@@ -9,6 +9,7 @@ body {
     font-family: PTSans;
     font-size: 14px;
     font-weight: bold;
+	line-height: 26px;
     text-transform: uppercase;
     
     color: #000000;
@@ -42,6 +43,16 @@ h2 {
         5px 5px 5px #dbdbdb;
 }
 
+/*   -----------------------------  CLEARFIX  ----------------------------- */
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*   -----------------------------  HEADER  ----------------------------- */
+
 .header-conteiner {
     font-size: 0px;
 }
@@ -55,140 +66,167 @@ h2 {
     display: inline-block;
     box-sizing: border-box;
     
-    width: 239px;
-    height: 56px;
-    padding-top: 20px;
+    width: 20%;
+    padding-top: 15px;
+	padding-bottom: 15px;
     
-    font-size: 14px;
+    font-size: 12px;
+	line-height: 26px;
     text-align: center;
     vertical-align: middle;
 }
 
-.header-conteiner > ul > li:nth-child(3) {
-    width: 244px;
+.header-conteiner .header-logo {
     padding-top: 0px;
+	padding-bottom: 0px;
+
+	line-height: 0px;
 }
+
+/*   -----------------------------  MAIN BANNER  ----------------------------- */
 
 .main-banner {
-    outline: 5px solid black;
     margin-bottom: 0px;
     padding-bottom: 0px;
+	
+	line-height: 0px;
 }
 
+/*   -----------------------------  MAIN  ----------------------------- */
+
+/*   ---------------------  DESCRIPTION-HEADER  ----------------------- */
+
 .description-header {
-    height: 216px;
-    text-align: center;
-    
-    margin-top: 0px;
-    padding-top: 0px;
-    
-    outline: 5px solid green;
+	text-align: center;
 }
 
 .description-header > h1 {
-    padding-top: 60px;
-    padding-bottom: 38px;
     margin-left: 250px;
     margin-right: 250px;
     margin-bottom: 0px;
-    
-    outline: 5px solid blue;
+	margin-top: 0px;
+	padding-top: 60px;
+    padding-bottom: 38px;
 }
 
 .description-header > p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+    padding-top: 0px;
+	padding-bottom: 40px;
+	
     font-size: 14px;
     font-weight: 400;
-    
-    padding-top: 0px;
-    margin-top: 0px;
-    
-    outline: 5px solid red;
 }
 
-.description-item-1 {
-    outline: 5px solid yellow;
+/*   -----------------------------  Описание 1, 2  ----------------------------- */
+
+.description-item-1,
+.description-item-2 {
+	line-height: 0px;
     text-align: center;
-    vertical-align: middle;
+	color: #ffffff;
 }
 
-.description-item-1:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.description-item-1 > .item {
-    width: 400px;
-    height: 256px;
+.description-item-1 > .item,
+.description-item-2 > .item {
+    width: 33.34%;
     float: left;
+	line-height: 26px;
     background-color: #81b3d2;
 }
 
-.description-banner-2 {
-    width: 800px;
-    float: right;
-    outline: 5px solid red;
-    
+.description-item-1 h1,
+.description-item-2 h1 {
+	width: 200px;
+	margin: auto;
+	margin-top: 55px;
+	margin-bottom: 8px;
+	padding-top: 0px;
 }
 
+.description-item-1 p,
+.description-item-2 p {
+	width: 350px;
+	margin: auto;
+	margin-top: 8px;
+	margin-bottom: 55px;
+}
+
+
+.description-banner {
+	width: 66.66%;
+	float: right;
+}
+
+.description-item-2 > .description-banner {
+    width: 66.66%;
+    float: left;
+}
+
+/*   -----------------------------  Описание   ----------------------------- */
+
 .description {
-    outline: 5px solid black;
     display: table;
-    height: 314px;
 }
 
 .description > .item {
-    display: table-cell;
-    outline: 5px solid gray;
-    width: 400px;
+	display: table-cell;
+	width: 400px;
+	
     text-align: center;
-    vertical-align: middle;
 }
 
 .item > img {
     display: block;
     margin-right: auto;
     margin-left: auto;
+	margin-top: 70px;
+	margin-bottom: 11px;
 }
 
-.description-item-2 {
-    outline: 5px solid red;
-    text-align: center;
-    vertical-align: middle;
+.description > h1 {
+	
 }
 
-.description-item-2:after {
-    content: '';
-    display: table;
-    clear: both;
+.description  p {
+	width: 340px;
+	margin: auto;
+	margin-bottom: 75px;
 }
 
-.description-item-2 > .item {
-    width: 400px;
-    height: 256px;
-    float: right;
-    background-color: #81b3d2;
-}
-
-.description-item-2 > .description-banner {
-    width: 800px;
-    float: left;
-    outline: 5px solid red;
-}
+/*   --------------------  DESCRIPTION FOOTER  ----------------------- */
 
 .description-footer {
     display: table;
-    outline: 5px solid yellow;
     text-align: center;
-    height: 256px;
     background-color: #eeeeee;
 }
 
-.description-footer > .item {
+.item-footer {
     display: table-cell;
-    outline: 5px solid red;
     width: 400px;
 }
+
+.item-footer > h1 {
+	width: 150px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+
+.item-footer > span {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.item-footer > p {
+	width: 250px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+/*   --------------------  SEARCH  ----------------------- */
 
 .search {
     outline: 5px solid blue;
@@ -242,7 +280,7 @@ h2 {
     vertical-align: middle;
 }
 
-/*         Сетка hotels.html           */
+/*   -----------------------------      Сетка hotels.html   -----------------------------        */
 
 /*   -----------------------------  Меню поиска    ----------------------------- */
 
