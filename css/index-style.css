@@ -6,7 +6,7 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     
-    font-family: PTSans;
+    font-family: 'PT Sans';
     font-size: 14px;
     font-weight: bold;
 	line-height: 26px;
@@ -28,7 +28,8 @@ h1 {
 
 h2 {
     font-size: 30px;
-    line-height: 24px;
+    line-height: 30px;
+    font-weight: bold;
 }
 
 .conteiner {
@@ -60,9 +61,11 @@ h2 {
 .header-conteiner > ul {
     margin-left: 0; 
     padding-left: 0;
+    
+    list-style: none;
 }
 
-.header-conteiner > ul > li {
+.header-conteiner li {
     display: inline-block;
     box-sizing: border-box;
     
@@ -70,18 +73,21 @@ h2 {
     padding-top: 15px;
 	padding-bottom: 15px;
     
-    font-size: 12px;
+    font-size: 14px;
 	line-height: 26px;
     text-align: center;
-    vertical-align: middle;
 }
 
-.header-conteiner .header-logo {
-    padding-top: 0px;
-	padding-bottom: 0px;
-
-	line-height: 0px;
+.header-logo {
+    position: relative;
 }
+
+.header-logo img {
+    position: absolute;
+    top: -3px;
+    left: 51px;
+}
+
 
 /*   -----------------------------  MAIN BANNER  ----------------------------- */
 
@@ -101,25 +107,24 @@ h2 {
 }
 
 .description-header > h1 {
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 295px;
+    margin-right: 295px;
     margin-bottom: 0px;
 	margin-top: 0px;
 	padding-top: 60px;
-    padding-bottom: 38px;
+    padding-bottom: 27px;
 }
 
 .description-header > p {
 	margin-top: 0px;
 	margin-bottom: 0px;
     padding-top: 0px;
-	padding-bottom: 40px;
+	padding-bottom: 51px;
 	
-    font-size: 14px;
     font-weight: 400;
 }
 
-/*   -----------------------------  Описание 1, 2  ----------------------------- */
+/*   -----------------------------  DESCRIPTION 1, 2  ----------------------------- */
 
 .description-item-1,
 .description-item-2 {
@@ -130,9 +135,9 @@ h2 {
 
 .description-item-1 > .item,
 .description-item-2 > .item {
-    width: 33.34%;
+    width: 33.33%;
     float: left;
-	line-height: 26px;
+    
     background-color: #81b3d2;
 }
 
@@ -140,31 +145,44 @@ h2 {
 .description-item-2 h1 {
 	width: 200px;
 	margin: auto;
-	margin-top: 55px;
-	margin-bottom: 9.5px;
+	margin-top: 54px;
+	margin-bottom: 24px;
 	padding-top: 0px;
+    
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.description-item-1 span,
+.description-item-2 span {
+    display: block;
+    margin-bottom: 21px;
+    
+    font-weight: 400;
+    line-height: 21px;
 }
 
 .description-item-1 p,
 .description-item-2 p {
-	width: 350px;
+	width: 300px;
 	margin: auto;
-	margin-top: 9.5px;
-	margin-bottom: 55px;
+	margin-bottom: 52px;
+    
+    font-weight: 400;
+    line-height: 21px;
 }
 
-
 .description-banner {
-	width: 66.66%;
+	width: 66.67%;
 	float: right;
 }
 
 .description-item-2 > .description-banner {
-    width: 66.66%;
+    width: 66.67%;
     float: left;
 }
 
-/*   -----------------------------  Описание   ----------------------------- */
+/*   -----------------------------  DESCRIPTION   ----------------------------- */
 
 .description {
     display: table;
@@ -177,22 +195,43 @@ h2 {
     text-align: center;
 }
 
-.item > img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-	margin-top: 70px;
-	margin-bottom: 11px;
-}
+.description h1 {
+    margin-top: 161px;
+    margin-bottom: 24px;
 
-.description > h1 {
-	
+    font-size: 21px;
+	line-height: 21px;
 }
 
 .description  p {
-	width: 340px;
+	width: 300px;
 	margin: auto;
-	margin-bottom: 75px;
+	margin-bottom: 82px;
+    
+    font-size: 14px;
+	line-height: 21px;
+    font-weight: 400;
+}
+
+.home {
+    background-image: url('../img/home.png');
+    background-repeat: no-repeat;
+    background-size: 75px 72px;
+    background-position: 50% 25%;
+}
+
+.food {
+    background-image: url('../img/food.png');
+    background-repeat: no-repeat;
+    background-size: 74px 70px;
+    background-position: 50% 25%;
+}
+
+.gift {
+    background-image: url('../img/gift.png');
+    background-repeat: no-repeat;
+    background-size: 64px 76px;
+    background-position: 50% 25%;
 }
 
 /*   --------------------  DESCRIPTION FOOTER  ----------------------- */
@@ -212,19 +251,30 @@ h2 {
 .item-footer > h1 {
 	width: 150px;
 	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 15px;
+	margin-top: 47px;
+	margin-bottom: 24px;
+    
+    font-size: 21px;
+    line-height: 21px;
 }
 
 .item-footer > span {
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 21px;
+    
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
 }
 
 .item-footer > p {
 	width: 250px;
 	margin: auto;
-	margin-bottom: 40px;
+	margin-bottom: 59px;
+    
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
 }
 
 /*   --------------------  SEARCH  ----------------------- */
@@ -238,18 +288,17 @@ h2 {
 }
 
 .search-header h2 {
-	display: inline-block;
-	padding: 0px;
-	margin: 0px;
-	margin-top: 58px;
-	margin-bottom: 38px;
+    display: block;
+	margin-top: 53px;
+	margin-bottom: 25px;
 }
 
 .search-header p {
-	width: 500px;
-	padding: 0px;
+	width: 450px;
 	margin: auto;
-	margin-bottom: 54px;
+	margin-bottom: 45px;
+    
+    font-weight: 400;
 }
 
 .search-menu-header {
@@ -262,45 +311,50 @@ h2 {
 }
 
 .search-menu-header a {
-	margin-top: 50px;
-	
+    display: block;
+    
+    font-size: 21px;
+    line-height: 26px;
 	color: #ffffff;
 }
 
 /*   --------------------  SEARCH MENU ----------------------- */
 
 .search-footer {
-	padding-bottom: 78px;
-	
     background-image: url('../img/Sedona-map.jpg');
 }
 
 .search-menu-conteiner {
     width: 568px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding-top: 40px;
 	
     background-color: #ffffff;
 }
 
 .search-menu-conteiner label {
     display: block;
-	padding-left: 55px;
-	padding-bottom: 55px;
+    
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
-input[type="date"] {
+.input {
 	display: block;
 	
 	width: 346px;
 	float: right;
 	box-sizing: border-box;
 	
-	margin-right: 55px;
-	margin-top: -15px;
+	margin-top: -7px;
 	
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 	padding-left: 15px;
 	
 	border: 0px;
@@ -313,9 +367,24 @@ input[type="date"] {
 	text-transform: uppercase;
 }
 
-.search-menu-conteiner label:nth-child(1) {
-	padding-top: 55px;
+/*   --------------------  HUITA ----------------------- */
+
+.search-footer label:nth-child(3),
+.search-footer label:nth-child(4) {
+    width: 200px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
+
+.search-footer label:nth-child(3) input,
+.search-footer label:nth-child(4) input {
+    width: 114px;
+    margin: 0;
+    padding: 0;
+}
+
+/*   -------------------- --------- ----------------------- */
 
 .btn-search {
 	width: 458px;
@@ -326,6 +395,8 @@ input[type="date"] {
 	padding-bottom: 16px;
 	
 	background-color: #81b3d2;
+    
+    border: none;
 	
 	font-size: 21px;
 	font-weight: 700;
@@ -333,6 +404,8 @@ input[type="date"] {
 	color: #ffffff;
 	text-transform: uppercase;
 }
+
+
 
 /*   --------------------  FOOTER ----------------------- */
 
