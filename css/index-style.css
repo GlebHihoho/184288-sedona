@@ -280,7 +280,7 @@ h2 {
 /*   --------------------  SEARCH  ----------------------- */
 
 .search {
-
+    padding-top: 53px;
 }
 
 .search-header {
@@ -289,7 +289,7 @@ h2 {
 
 .search-header h2 {
     display: block;
-	margin-top: 53px;
+	margin: 0px;
 	margin-bottom: 25px;
 }
 
@@ -321,7 +321,7 @@ h2 {
 /*   --------------------  SEARCH MENU ----------------------- */
 
 .search-footer {
-    background-image: url('../img/Sedona-map.jpg');
+    padding-bottom: 78px;
 }
 
 .search-menu-conteiner {
@@ -330,9 +330,24 @@ h2 {
     padding-top: 40px;
 	
     background-color: #ffffff;
+    
+    box-shadow: 
+        -2px 0 15px #cccccc,
+        2px 5px 15px #cccccc;
 }
 
-.search-menu-conteiner label {
+input[type="text"] {
+    border: 0px;
+    
+    background-color: #f2f2f2;
+    
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.search-menu-conteiner .date {
     display: block;
     
     margin-left: 55px;
@@ -344,7 +359,7 @@ h2 {
     padding-bottom: 6px;
 }
 
-.input {
+.input-date {
 	display: block;
 	
 	width: 346px;
@@ -356,38 +371,43 @@ h2 {
 	padding-top: 7px;
 	padding-bottom: 7px;
 	padding-left: 15px;
-	
-	border: 0px;
-	
-	background-color: #f2f2f2;
-	
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 26px;
-	text-transform: uppercase;
 }
 
-/*   --------------------  HUITA ----------------------- */
+/*   --------------------  INPUT NUMBER ----------------------- */
 
-.search-footer label:nth-child(3),
-.search-footer label:nth-child(4) {
-    width: 200px;
+.parents,
+.child {
+    width: 230px;
     display: inline-block;
-    margin: 0;
-    padding: 0;
+    margin-left: 55px;
 }
 
-.search-footer label:nth-child(3) input,
-.search-footer label:nth-child(4) input {
+.child {
+    width: 180px;
+    margin: 0px;
+    margin-left: 47px;
+    padding: 0px;
+}
+
+.child .input-number {
+    margin-left: 22px;
+}
+
+.input-number {
     width: 114px;
-    margin: 0;
-    padding: 0;
+    margin-left: 38px;
+    margin-right: 0px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+
+    text-align: center;
 }
 
-/*   -------------------- --------- ----------------------- */
+/*   -------------------- BTN SEARCH ----------------------- */
 
 .btn-search {
 	width: 458px;
+    margin-top: 53px;
 	margin-left: 55px;
 	margin-right: 55px;
 	margin-bottom: 55px;
@@ -409,9 +429,13 @@ h2 {
 
 /*   --------------------  FOOTER ----------------------- */
 
+footer {
+    background-color: #ffffff;
+    background-image: url('../img/Sedona-map.jpg');
+}
+
 .footer-container {
-    height: 120px;
-    display: table;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-hashtag,
@@ -419,8 +443,71 @@ h2 {
 .footer-copyright {
     display: table-cell;
     width: 400px;
+    
     text-align: center;
     vertical-align: middle;
+}
+
+.footer-hashtag p {
+    margin: 0px;
+    padding: 0px;
+    
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.footer-social {
+    font-size: 0;
+    line-height: 0;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 45px;
+    height: 48px;
+    margin: 0px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0px;
+    
+    background-color: #81b3d2;
+}
+
+.social-btn-tw {
+    background-image: url('../img/social-sprite.png');
+    background-repeat: no-repeat;
+    background-position: -75px 5px;
+}
+
+.social-btn-fb {
+    background-image: url('../img/social-sprite.png');
+    background-repeat: no-repeat;
+    background-position: 1px 1px; 
+}
+
+.social-btn-YT {
+    background-image: url('../img/social-sprite.png');
+    background-repeat: no-repeat;
+    background-position: -37px 5px; 
+}
+
+.footer-copyright {
+    vertical-align: middle;
+    background-image: url('../img/Academy-Logo.png');
+    background-repeat: no-repeat;
+    background-position: 64% 50%;
+}
+
+.footer-copyright span {
+    display: block;
+    width: 200px;
+    margin-left: 40px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 /*   -----------------------------      Сетка hotels.html   -----------------------------        */
