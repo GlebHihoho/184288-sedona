@@ -1,0 +1,620 @@
+body {
+    width: auto;
+    
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: bold;
+	line-height: 26px;
+    text-transform: uppercase;
+    
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.conteiner {
+    width: 1200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: #ffffff; 
+    box-shadow: 
+        -5px -5px 5px #dbdbdb,
+        5px 5px 5px #dbdbdb;
+}
+
+/*   -----------------------------  CLEARFIX  ----------------------------- */
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*   -----------------------------  HEADER  ----------------------------- */
+
+.header-conteiner {
+    font-size: 0px;
+}
+
+.header-conteiner > ul {
+    margin-left: 0; 
+    padding-left: 0;
+    
+    list-style: none;
+}
+
+.header-conteiner li {
+    display: inline-block;
+    box-sizing: border-box;
+    
+    width: 20%;
+    padding-top: 15px;
+	padding-bottom: 15px;
+    
+    font-size: 14px;
+	line-height: 26px;
+    text-align: center;
+}
+
+.header-logo {
+    position: relative;
+}
+
+.header-logo img {
+    position: absolute;
+    top: -3px;
+    left: 51px;
+}
+
+
+/*   -----------------------------  MAIN BANNER  ----------------------------- */
+
+.main-banner {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+	
+	line-height: 0px;
+}
+
+/*   -----------------------------  MAIN  ----------------------------- */
+
+/*   ---------------------  DESCRIPTION-HEADER  ----------------------- */
+
+.description-header {
+	text-align: center;
+}
+
+.description-header > h1 {
+    margin-left: 295px;
+    margin-right: 295px;
+    margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 60px;
+    padding-bottom: 27px;
+}
+
+.description-header > p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+    padding-top: 0px;
+	padding-bottom: 51px;
+	
+    font-weight: 400;
+}
+
+/*   -----------------------------  DESCRIPTION 1, 2  ----------------------------- */
+
+.description-item-1,
+.description-item-2 {
+	line-height: 0px;
+    text-align: center;
+	color: #ffffff;
+}
+
+.description-item-1 > .item,
+.description-item-2 > .item {
+    width: 33.33%;
+    float: left;
+    
+    background-color: #81b3d2;
+}
+
+.description-item-1 h1,
+.description-item-2 h1 {
+	width: 200px;
+	margin: auto;
+	margin-top: 54px;
+	margin-bottom: 24px;
+	padding-top: 0px;
+    
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.description-item-1 span,
+.description-item-2 span {
+    display: block;
+    margin-bottom: 21px;
+    
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.description-item-1 p,
+.description-item-2 p {
+	width: 300px;
+	margin: auto;
+	margin-bottom: 52px;
+    
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.description-banner {
+	width: 66.67%;
+	float: right;
+}
+
+.description-item-2 > .description-banner {
+    width: 66.67%;
+    float: left;
+}
+
+/*   -----------------------------  DESCRIPTION   ----------------------------- */
+
+.description {
+    display: table;
+}
+
+.description > .item {
+	display: table-cell;
+	width: 400px;
+	
+    text-align: center;
+}
+
+.description h1 {
+    margin-top: 161px;
+    margin-bottom: 24px;
+
+    font-size: 21px;
+	line-height: 21px;
+}
+
+.description  p {
+	width: 300px;
+	margin: auto;
+	margin-bottom: 82px;
+    
+    font-size: 14px;
+	line-height: 21px;
+    font-weight: 400;
+}
+
+.home {
+    background-image: url('../img/home.png');
+    background-repeat: no-repeat;
+    background-size: 75px 72px;
+    background-position: 50% 25%;
+}
+
+.food {
+    background-image: url('../img/food.png');
+    background-repeat: no-repeat;
+    background-size: 74px 70px;
+    background-position: 50% 25%;
+}
+
+.gift {
+    background-image: url('../img/gift.png');
+    background-repeat: no-repeat;
+    background-size: 64px 76px;
+    background-position: 50% 25%;
+}
+
+/*   --------------------  DESCRIPTION FOOTER  ----------------------- */
+
+.description-footer {
+    display: table;
+	
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.item-footer {
+    display: table-cell;
+    width: 400px;
+}
+
+.item-footer > h1 {
+	width: 150px;
+	margin: auto;
+	margin-top: 47px;
+	margin-bottom: 24px;
+    
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.item-footer > span {
+	display: block;
+	margin-bottom: 21px;
+    
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.item-footer > p {
+	width: 250px;
+	margin: auto;
+	margin-bottom: 59px;
+    
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+/*   --------------------  SEARCH  ----------------------- */
+
+.search {
+    padding-top: 53px;
+}
+
+.search-header {
+    text-align: center;
+}
+
+.search-header h2 {
+    display: block;
+	margin: 0px;
+	margin-bottom: 25px;
+}
+
+.search-header p {
+	width: 450px;
+	margin: auto;
+	margin-bottom: 45px;
+    
+    font-weight: 400;
+}
+
+.search-menu-header {
+    width: 568px;
+    margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+    background-color: #766357;
+}
+
+.search-menu-header a {
+    display: block;
+    
+    font-size: 21px;
+    line-height: 26px;
+	color: #ffffff;
+}
+
+/*   --------------------  SEARCH MENU ----------------------- */
+
+.search-footer {
+    padding-bottom: 78px;
+}
+
+.search-menu-conteiner {
+    width: 568px;
+    margin: auto;
+    padding-top: 40px;
+	
+    background-color: #ffffff;
+    
+    box-shadow: 
+        -2px 0 15px #cccccc,
+        2px 5px 15px #cccccc;
+}
+
+input[type="text"] {
+    border: 0px;
+    
+    background-color: #f2f2f2;
+    
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.search-menu-conteiner .date {
+    display: block;
+    
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.input-date {
+	display: block;
+	
+	width: 346px;
+	float: right;
+	box-sizing: border-box;
+	
+	margin-top: -7px;
+	
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+}
+
+/*   --------------------  INPUT NUMBER ----------------------- */
+
+.parents,
+.child {
+    width: 230px;
+    display: inline-block;
+    margin-left: 55px;
+}
+
+.child {
+    width: 180px;
+    margin: 0px;
+    margin-left: 47px;
+    padding: 0px;
+}
+
+.child .input-number {
+    margin-left: 22px;
+}
+
+.input-number {
+    width: 114px;
+    margin-left: 38px;
+    margin-right: 0px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+
+    text-align: center;
+}
+
+/*   -------------------- BTN SEARCH ----------------------- */
+
+.btn-search {
+	width: 458px;
+    margin-top: 53px;
+	margin-left: 55px;
+	margin-right: 55px;
+	margin-bottom: 55px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	
+	background-color: #81b3d2;
+    
+    border: none;
+	
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+
+
+/*   --------------------  FOOTER ----------------------- */
+
+footer {
+    background-color: #ffffff;
+    background-image: url('../img/Sedona-map.jpg');
+}
+
+.footer-container {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-hashtag,
+.footer-social,
+.footer-copyright {
+    display: table-cell;
+    width: 400px;
+    
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer-hashtag p {
+    margin: 0px;
+    padding: 0px;
+    
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.footer-social {
+    font-size: 0;
+    line-height: 0;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 45px;
+    height: 48px;
+    margin: 0px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0px;
+    
+    background-color: #81b3d2;
+}
+
+.social-btn-tw {
+    background-image: url('../img/social-sprite.png');
+    background-repeat: no-repeat;
+    background-position: -75px 5px;
+}
+
+.social-btn-fb {
+    background-image: url('../img/social-sprite.png');
+    background-repeat: no-repeat;
+    background-position: 1px 1px; 
+}
+
+.social-btn-YT {
+    background-image: url('../img/social-sprite.png');
+    background-repeat: no-repeat;
+    background-position: -37px 5px; 
+}
+
+.footer-copyright {
+    vertical-align: middle;
+    background-image: url('../img/Academy-Logo.png');
+    background-repeat: no-repeat;
+    background-position: 64% 50%;
+}
+
+.footer-copyright span {
+    display: block;
+    width: 200px;
+    margin-left: 40px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/*   -----------------------------      Сетка hotels.html   -----------------------------        */
+
+/*   -----------------------------  Меню поиска    ----------------------------- */
+
+.search-test {
+    outline: 5px solid blue;
+    width: 1200px;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.search-test::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.infrastructure,
+.property-type,
+.cost {
+    width: 398px;
+    margin: 0px;
+    padding: 0px; 
+    float: left;
+}
+
+/*   -----------------------------  Меню сортировки    ----------------------------- */
+
+.results-menu {
+    outline: 5px solid red;
+}
+
+.results-menu::after {
+    content: '';
+    display: table;
+    clear: both; 
+}
+
+.results-menu p,
+.results-menu span {
+    width: 100px;
+    float: left;
+    margin-top: 0px;
+}
+
+.sorting-results-list {
+    width: 900px;
+}
+
+.sorting-results-list > li {
+    display: inline-block;
+    float: left;
+}
+
+.reverse-results-list {
+    width: 290px;
+    float: right; 
+}
+
+/*   -----------------------------  Список найденного    ----------------------------- */
+
+.results {
+    outline: 5px solid green;
+}
+
+.results-item {
+    outline: 2px solid blue;
+    height: 150px;
+    display: block;
+}
+
+.results-item > img {
+    float: left;
+    border: 1px solid #ffffff;
+}
+
+
+.name-results {
+    outline: 2px solid red;
+    width: 500px;
+    float: left;
+}
+
+.rating {
+    width: 200px;
+    margin-top: 10px;
+    float: right;
+    text-align: center;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
