@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Sedona-hotels</title>
-    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="conteiner">
@@ -17,7 +17,7 @@
             </li>
             <li class="header-logo">
                 <a href="index.html">
-                    <img src="img/Selona-Logo.png" width="67px" height="56px" alt="Sedona Logo">
+                    <img src="img/Sedona-LOGOGO.png" width="138px" height="70px" alt="Sedona Logo">
                 </a>
             </li>
             <li>
@@ -28,25 +28,37 @@
             </li>
         </ul>
       </header>
-      <div class="search-test">
+      <div class="search-test clearfix">
          <form action="#" method="post">
           <fieldset class="infrastructure">
               <legend>Инфраструктура</legend>
-              <input type="checkbox" name="pool" id="pool" checked>
-              <label for="pool">Бассейн</label>
-              <input type="checkbox" name="parking" id="parking">
-              <label for="parking">Парковка</label>
-              <input type="checkbox" name="Wi-Fi" id="Wi-Fi">
-              <label for="Wi-Fi">Wi-Fi</label>
+              <label for="pool">
+                  <input type="checkbox" name="pool" id="pool" checked>
+                  Бассейн
+              </label>
+              <label for="parking">
+                  <input type="checkbox" name="parking" id="parking">
+                  Парковка
+              </label>
+              <label for="Wi-Fi">
+                  <input type="checkbox" name="Wi-Fi" id="Wi-Fi">
+                  Wi-Fi
+              </label>
           </fieldset>
           <fieldset class="property-type">
               <legend>Тип жилья</legend>
-              <input type="checkbox" name="hotel" id="hotel" checked>
-              <label for="hotel">Гостиница</label>
-              <input type="checkbox" name="motel" id="motel" checked>
-              <label for="motel">Парковка</label>
-              <input type="checkbox" name="apartments" id="apartments" checked>
-              <label for="apartments">Апартаменты</label>
+              <label for="hotel">
+                  <input type="checkbox" name="hotel" id="hotel" checked>
+                  Гостиница
+              </label>
+              <label for="motel">
+                  <input type="checkbox" name="motel" id="motel" checked>
+                  Парковка
+              </label>
+              <label for="apartments">
+                  <input type="checkbox" name="apartments" id="apartments" checked>
+                  Апартаменты
+              </label>
           </fieldset>
           <div class="cost">
               <p>Стоимость в сутки (Р):</p>
@@ -60,7 +72,7 @@
       </div>
       <div class="results-list">
           <div class="results-menu">
-              <p>Найдено: 3</p>
+              <span>Найдено: 3</span>
               <span>Сортировка:</span>
               <ul class="sorting-results-list">
                   <li>
@@ -133,9 +145,8 @@
             <a class="social-btn social-btn-YT" href="#">YouTube</a>
         </div>
         <div class="footer-copyright">
-            <span>Website by</span>
-            <a class="btn" href="#">
-                <img src="img/Academy-Logo.png" width="113px" height="39px" alt="Academy-Logo">
+            <a class="btn" href="https://htmlacademy.ru">
+                <span>Website by</span>
             </a>
         </div>
       </footer>

@@ -380,6 +380,8 @@ input[type="text"] {
     width: 230px;
     display: inline-block;
     margin-left: 55px;
+    
+    position: relative;
 }
 
 .child {
@@ -399,8 +401,30 @@ input[type="text"] {
     margin-right: 0px;
 	padding-top: 5px;
 	padding-bottom: 7px;
-
+    
     text-align: center;
+}
+
+/*   -------------------- PLUS +/- MINUS ----------------------- */
+
+label span {
+    color: #a9a9a9;
+    font-size: 24px;
+	line-height: 26px;
+}
+
+.minus {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 95px;
+}
+
+.plus {
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 14px;
 }
 
 /*   -------------------- BTN SEARCH ----------------------- */
@@ -424,8 +448,6 @@ input[type="text"] {
 	color: #ffffff;
 	text-transform: uppercase;
 }
-
-
 
 /*   --------------------  FOOTER ----------------------- */
 
@@ -510,38 +532,77 @@ footer {
     line-height: 26px;
 }
 
-/*   -----------------------------      Сетка hotels.html   -----------------------------        */
+/*   -----------------------------  HOTELS.html   ----------------------------- */
 
-/*   -----------------------------  Меню поиска    ----------------------------- */
+/*   -----------------------------  Меню поиска   ----------------------------- */
 
 .search-test {
-    outline: 5px solid blue;
-    width: 1200px;
-    margin: 0px;
-    padding: 0px; 
-}
-
-.search-test::after {
-    content: '';
-    display: table;
-    clear: both;
+    background-image: url('../img/Hotels-Banner.jpg');
+    background-repeat: no-repeat;
+    
+    font-size: 0px;
+    line-height: 0px;
+    color: #ffffff;
 }
 
 .infrastructure,
 .property-type,
 .cost {
-    width: 398px;
+    display: inline-block;
+    width: 400px;
     margin: 0px;
     padding: 0px; 
-    float: left;
+    vertical-align: top;
+    
+    border: none;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/*   --------- Инпуты инпутики, чекбоксы чекбоксики ------------------ */
+
+label {
+    display: block;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    
+    
+}
+
+label::after {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid red;
 }
 
 /*   -----------------------------  Меню сортировки    ----------------------------- */
 
+.results-list {
+    margin: 0px;
+    padding: 0px;
+    
+    outline: 5px solid blue;
+}
+
+/*   -----------------------------  RESILTS MENU    ----------------------------- */
+
 .results-menu {
+    margin: 0px;
+    padding: 0px;
+    
     outline: 5px solid red;
 }
 
+
+
+/*
 .results-menu::after {
     content: '';
     display: table;
@@ -549,9 +610,11 @@ footer {
 }
 
 .results-menu p,
-.results-menu span {
+.results-menu span,
+.results-menu ul,
+.results-menu a {
+    display: inline-block;
     width: 100px;
-    float: left;
     margin-top: 0px;
 }
 
@@ -568,6 +631,7 @@ footer {
     width: 290px;
     float: right; 
 }
+*/
 
 /*   -----------------------------  Список найденного    ----------------------------- */
 
