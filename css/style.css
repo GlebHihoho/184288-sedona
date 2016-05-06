@@ -179,7 +179,7 @@ h2 {
 
 .description-item-1 > .item,
 .description-item-2 > .item {
-    width: 33.33%;
+    width: 400px;
     float: left;
     
     background-color: #81b3d2;
@@ -217,12 +217,12 @@ h2 {
 }
 
 .description-banner {
-	width: 66.67%;
+	width: 800px;
 	float: right;
 }
 
 .description-item-2 > .description-banner {
-    width: 66.67%;
+    width: 800px;
     float: left;
 }
 
@@ -366,9 +366,12 @@ h2 {
 
 .search-footer {
     padding-bottom: 78px;
+	height: 473px;
 }
 
 .search-menu-conteiner {
+/*	display: none;*/
+	
     width: 568px;
     margin: auto;
     padding-top: 40px;
@@ -405,6 +408,7 @@ input[type="text"] {
 
 .input-date {
 	display: block;
+	position: relative;
 	
 	width: 346px;
 	float: right;
@@ -415,6 +419,14 @@ input[type="text"] {
 	padding-top: 7px;
 	padding-bottom: 7px;
 	padding-left: 15px;
+	padding-right: 50px;
+}
+
+.icon-calendar {
+	position: absolute;
+	right: 2%;
+	color: #c2c2c2;
+	z-index: 10;
 }
 
 /*   --------------------  INPUT NUMBER ----------------------- */
@@ -587,6 +599,8 @@ footer {
 .search-test {
     background-image: url('../img/Hotels-Banner.jpg');
     background-repeat: no-repeat;
+	
+	padding-bottom: 9px;
     
     font-size: 0px;
     line-height: 0px;
@@ -597,9 +611,9 @@ footer {
 .property-type,
 .cost {
     display: inline-block;
-    width: 400px;
     margin: 0px;
-    padding: 0px; 
+    padding: 0px;
+	
     vertical-align: top;
     
     border: none;
@@ -609,30 +623,71 @@ footer {
     line-height: 26px;
 }
 
+.infrastructure {
+	width: 240px;
+	padding-left: 73px;
+}
+
+.infrastructure legend,
+.property-type legend {
+	margin-left: -3px;
+}
+
+.property-type {
+	width: 483px;
+}
+
 /*   --------- Инпуты инпутики, чекбоксы чекбоксики ------------------ */
 
-label {
-    display: block;
-    position: relative;
+.search-test legend {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 21px;
+	
 }
 
 input[type="checkbox"] {
-    
-    
+    display: none;
 }
 
-label::after {
-    position: absolute;
-    top: 0px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    border: 3px solid red;
+.infrastructure label,
+.property-type label {
+    display: block;
+	width: 100px;
+	position: relative;
+	
+	margin-bottom: 20px;
+	padding-left: 40px;
+	
+	cursor: pointer;
 }
+
+.infrastructure label::before,
+.property-type label::before {
+	content: '\2610';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 20px;
+	height: 20px;
+	font-family: "symbols-sedona";
+	font-size: 26px;
+	line-height: 26px;
+}
+
+input[type="checkbox"]:checked + label::before {
+	content: '\2611';
+}
+
 
 /*   --------- Фильтр Строимости ------------------ */
 
 .cost-header {
+	margin-top: 25px;
 	margin-bottom: 9px;
 
 	font-weight: 600;
@@ -761,24 +816,12 @@ label::after {
 	background: #ffffff;
 }
 
-/*   -----------------------------  Меню сортировки    ----------------------------- */
-
-.results-list {
-    margin: 0px;
-    padding: 0px;
-
-}
-
 /*   -----------------------------  RESILTS MENU    ----------------------------- */
 
 .results-menu {
-    margin: 0px;
-    padding: 0px;
-	
 	border-bottom: 1px solid #e5e5e5;
 	
 	font-size: 0px;
-	vertical-align: middle;
 }
 
 .number-results {
@@ -824,20 +867,19 @@ label::after {
 .reverse-results-list {
 	display: inline-block;
 	width: 180px;
-	padding-top: 30px;
-	padding-bottom: 30px;
 
 	text-align: center;
 }
 
 .reverse-results-list a {
-	font-size: 21px;
-	line-height: 26px;
+	font-size: 19px;
+	line-height: 21px;
 }
 
 /*   -----------------------------  Список найденного    ----------------------------- */
 
 .results {
+	
 }
 
 .results-item {
@@ -854,7 +896,7 @@ label::after {
 
 	margin-left: 73px;
 	margin-right: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 16px;
 	
 }
 
@@ -870,21 +912,28 @@ label::after {
 }
 
 .results-name {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .name {
 	font-size: 21px;
-	line-height: 21px;
+	line-height: 15px;
 }
 
 .stars {
 	float: right;
 	padding-right: 70px;
+	font-size: 0px;
+}
+
+.icon-star {
+	color: #81b3d2;
+	font-size: 19px;
+	line-height: 21px;
 }
 
 .results-class {
-	margin-bottom: 6px;
+	margin-bottom: 15px;
 	
 	font-size: 0px;
 	font-weight: 400;
