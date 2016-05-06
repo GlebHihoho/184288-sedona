@@ -61,19 +61,30 @@
               </label>
           </fieldset>
           <div class="cost">
-              <p>Стоимость в сутки (Р):</p>
-              <input type="text" name="start-cost" value="от 0" for="start-cost">
-              <input type="text" name="finish-cost" value="до 3000">
-              <input type="range" name="start-cost" min="0" max="3000" value="0" id="start-cost">
-              <input type="range" name="start-cost" min="3000" max="10000" value="3000">
-              <input type="submit" value="Показать">
+              <div class="cost-header">Стоимость в сутки (Р):</div>
+			  <div class="price-controls">
+                  <label class="min-price">от 
+                      <input type="text" name="min-price" value="0">
+                  </label>
+        		  <label class="max-price">до 
+                 	  <input type="text" name="max-price" value="3000">
+                  </label>
+              </div>
+			  <div class="range-controls">
+				  <div class="scale">
+				      <div class="bar"></div>
+				  </div>
+				  <div class="range-toggle range-toggle-min"></div>
+			      <div class="range-toggle range-toggle-max"></div>
+			  </div>
+      		  <button class="btn-transparent" type="submit">Показать</button>
           </div>
          </form>
       </div>
       <div class="results-list">
           <div class="results-menu">
-              <span>Найдено: 3</span>
-              <span>Сортировка:</span>
+              <div class="number-results">Найдено: 3</div>
+              <div class="sorting-results">Сортировка:</div>
               <ul class="sorting-results-list">
                   <li>
                   	<a href="#">По цене</a>
@@ -86,56 +97,85 @@
                   </li>
               </ul>
               <div class="reverse-results-list">
-                  <a class="reverse-up" href="#">UP</a>
-                  <a class="reverse-down" href="#">DOWN</a>
+                  <a class="reverse-up" href="#">
+                  	<span class="icon-up-dir"></span>
+                  </a>
+                  <a class="reverse-down" href="#">
+                  	<span class="icon-down-dir"></span>
+                  </a>
               </div>
           </div>
-              <div class="results">
-                  <div class="results-item">
-                     <img src="img/Hotel-icon-1.jpg" width="135px" height="90px" alt="Home-1">
-                     <div class="name-results">
-                         <p>Amara resort & spa</p>
-                         <span>Гостиница</span>
-                         <span>от 3500 Р.</span>
-						 <a href="#">Подробнее</a>
-						 <a href="#">Забронировать</a>
-                     </div>
-                     <div class="rating">
-                         <div class="stars">****</div>
-                         <span>Рейтинг: 8.5</span>
-                     </div>
-                  </div>
-                  <div class="results-item">
-                     <img src="img/Hotel-icon-2.jpg" width="135px" height="90px" alt="Home-2">
-                     <div class="name-results">
-                         <p>Desert Quail Inn</p>
-                         <span>Мотель</span>
-                         <span>от 2000 Р.</span>
-						 <a href="#">Подробнее</a>
-						 <a href="#">Забронировать</a>
-                     </div>
-                     <div class="rating">
-                         <div class="stars">**</div>
-                         <span>Рейтинг: 8.9</span>
-                     </div>
-                  </div>
-                  <div class="results-item">
-                     <img src="img/Hotel-icon-3.jpg" width="135px" height="90px" alt="Home-3">
-                     <div class="name-results">
-                         <p>Villas At Poco Diablo</p>
-                         <span>Апартаменты</span>
-                         <span>от 4000 Р.</span>
-						 <a href="#">Подробнее</a>
-						 <a href="#">Забронировать</a>
-                     </div>
-                     <div class="rating">
-                         <div class="stars">***</div>
-                         <span>Рейтинг: 9.2</span>
-                     </div>
-                  </div>
+          <div class="results">
+              <div class="results-item">
+                  <img src="img/Hotel-icon-1.jpg" width="135px" height="90px" alt="Home-1">
+                  <div class="results-description">
+					  <div class="results-name">
+						 <span class="name">Amara resort & spa</span>
+						 <span class="stars">
+						 	<span class="icon-star"></span>
+						 	<span class="icon-star"></span>
+						 	<span class="icon-star"></span>
+						 	<span class="icon-star"></span>
+						 </span>
+					  </div>
+					  <div class="results-class">
+						 <span>Гостиница</span>
+						 <span>от 3500 Р.</span>
+					  </div>
+					  <div class="results-detail">
+						 <a class="detail btn" href="#">Подробнее</a>
+						 <a class="reserve btn" href="#">Забронировать</a>
+						 <span class="btn">Рейтинг: 8.5</span>
+					  </div>
+              	  </div>
               </div>
+              <div class="results-item">
+                  <img src="img/Hotel-icon-2.jpg" width="135px" height="90px" alt="Home-2">
+                  <div class="results-description">
+					  <div class="results-name">
+						 <span class="name">Desert Quail Inn</span>
+						 <span class="stars">
+						 	<span class="icon-star"></span>
+						 	<span class="icon-star"></span>
+						 </span>
+					  </div>
+					  <div class="results-class">
+						 <span>Мотель</span>
+						 <span>от 2000 Р.</span>
+					  </div>
+					  <div class="results-detail">
+						 <a class="detail btn" href="#">Подробнее</a>
+						 <a class="reserve btn" href="#">Забронировать</a>
+						 <span class="btn">Рейтинг: 8.9</span>
+					  </div>
+				  </div>
+              </div>
+              <div class="results-item">
+                  <img src="img/Hotel-icon-3.jpg" width="135px" height="90px" alt="Home-3">
+                  <div class="results-description">
+					  <div class="results-name">
+						 <span class="name">Villas at Poco Diablo</span>
+						 <span class="stars">
+						 	<span class="icon-star"></span>
+						 	<span class="icon-star"></span>
+						 	<span class="icon-star"></span>
+							 
+						 </span>
+					  </div>
+					  <div class="results-class">
+						 <span>Апартаменты</span>
+						 <span>от 4000 Р.</span>
+					  </div>
+					  <div class="results-detail">
+						 <a class="detail btn" href="#">Подробнее</a>
+						 <a class="reserve btn" href="#">Забронировать</a>
+						 <span class="btn">Рейтинг: 9.2</span>
+					  </div>
+				  </div>
+              </div>
+          </div>
       </div>
-      <footer class="footer-container">
+      <footer class="footer-container footer-hotels">
         <div class="footer-hashtag">
             <p>#VisitSedona</p>
         </div>
