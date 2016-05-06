@@ -44,7 +44,7 @@ h2 {
         5px 5px 5px #dbdbdb;
 }
 
-/*   -----------------------------  CLEARFIX  ----------------------------- */
+/* ------------------------------ CLEARFIX  ------------------------------ */
 
 .clearfix::after {
     content: '';
@@ -52,7 +52,7 @@ h2 {
     clear: both;
 }
 
-/*   -----------------------------  ICON CYMBOLS SEDONA    ----------------------------- */
+/* ------------------------------ ICON CYMBOLS SEDONA ------------------------------ */
 
 @font-face {
   font-weight: normal;
@@ -94,9 +94,9 @@ h2 {
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
-/*   --------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
 
-/*   -----------------------------  HEADER  ----------------------------- */
+/* ------------------------------ HEADER ------------------------------ */
 
 .header-conteiner {
     font-size: 0px;
@@ -132,8 +132,25 @@ h2 {
     left: 51px;
 }
 
+/* ---------- HOVER / ACTIVE ---------- */
 
-/*   -----------------------------  MAIN BANNER  ----------------------------- */
+.header-conteiner a:hover {
+	color: #81b3d2;
+}
+
+.header-conteiner a:active {
+	color: #b2b2b2;
+}
+
+.header-conteiner .active {
+	color: #b2b2b2;
+}
+
+.header-conteiner .active:hover {
+	color: #b2b2b2;
+}
+/* ------------------------------------------------------------------------- */
+/* ------------------------------ MAIN BANNER ------------------------------ */
 
 .main-banner {
     margin-bottom: 0px;
@@ -142,9 +159,9 @@ h2 {
 	line-height: 0px;
 }
 
-/*   -----------------------------  MAIN  ----------------------------- */
+/* ------------------------------ MAIN  ------------------------------ */
 
-/*   ---------------------  DESCRIPTION-HEADER  ----------------------- */
+/* ------------------------------ DESCRIPTION-HEADER ------------------------------ */
 
 .description-header {
 	text-align: center;
@@ -168,7 +185,7 @@ h2 {
     font-weight: 400;
 }
 
-/*   -----------------------------  DESCRIPTION 1, 2  ----------------------------- */
+/* ------------------------------ DESCRIPTION 1, 2 ------------------------------ */
 
 .description-item-1,
 .description-item-2 {
@@ -226,7 +243,7 @@ h2 {
     float: left;
 }
 
-/*   -----------------------------  DESCRIPTION   ----------------------------- */
+/* ------------------------------ DESCRIPTION ------------------------------ */
 
 .description {
     display: table;
@@ -278,7 +295,7 @@ h2 {
     background-position: 50% 25%;
 }
 
-/*   --------------------  DESCRIPTION FOOTER  ----------------------- */
+/* ------------------------------ DESCRIPTION FOOTER ------------------------------ */
 
 .description-footer {
     display: table;
@@ -321,7 +338,7 @@ h2 {
     font-weight: 400;
 }
 
-/*   --------------------  SEARCH  ----------------------- */
+/* ------------------------------ SEARCH ------------------------------ */
 
 .search {
     padding-top: 53px;
@@ -362,7 +379,7 @@ h2 {
 	color: #ffffff;
 }
 
-/*   --------------------  SEARCH MENU ----------------------- */
+/* ------------------------------ SEARCH MENU ------------------------------ */
 
 .search-footer {
     padding-bottom: 78px;
@@ -379,11 +396,11 @@ h2 {
     background-color: #ffffff;
     
     box-shadow: 
-        -2px 0 15px #cccccc,
-        2px 5px 15px #cccccc;
+        -7px 0 15px rgba(0, 0, 0, 0.15),
+        7px 7px 15px rgba(0, 0, 0, 0.15);
 }
 
-input[type="text"] {
+.search-menu-conteiner input[type="text"] {
     border: 0px;
     
     background-color: #f2f2f2;
@@ -396,6 +413,7 @@ input[type="text"] {
 
 .search-menu-conteiner .date {
     display: block;
+	position: relative;
     
     margin-left: 55px;
     margin-right: 55px;
@@ -408,7 +426,6 @@ input[type="text"] {
 
 .input-date {
 	display: block;
-	position: relative;
 	
 	width: 346px;
 	float: right;
@@ -429,7 +446,17 @@ input[type="text"] {
 	z-index: 10;
 }
 
-/*   --------------------  INPUT NUMBER ----------------------- */
+/* ---------- HOVER / ACTIVE ---------- */
+
+.search-menu-conteiner input[type="text"]:hover {
+	background-color: #ebebeb;
+}
+
+.search-menu-conteiner input[type="text"]:active {
+	background-color: #ffffff;
+}
+
+/* ------------------------------ INPUT NUMBER ------------------------------ */
 
 .parents,
 .child {
@@ -461,7 +488,7 @@ input[type="text"] {
     text-align: center;
 }
 
-/*   -------------------- PLUS +/- MINUS ----------------------- */
+/* ------------------------------ PLUS +/- MINUS ------------------------------ */
 
 label span {
     color: #a9a9a9;
@@ -483,7 +510,21 @@ label span {
     right: 14px;
 }
 
-/*   -------------------- BTN SEARCH ----------------------- */
+/* ---------- HOVER / ACTIVE ---------- */
+
+.minus:hover,
+.plus:hover,
+.icon-calendar:hover {
+	color: #000000;
+}
+
+.minus:active,
+.plus:active,
+.icon-calendar:active {
+	color: #81b3d2;
+}
+
+/* ------------------------------ BTN SEARCH ------------------------------ */
 
 .btn-search {
 	width: 458px;
@@ -505,7 +546,19 @@ label span {
 	text-transform: uppercase;
 }
 
-/*   --------------------  FOOTER ----------------------- */
+/* ---------- HOVER / ACTIVE ---------- */
+
+.btn-search:hover {
+	background-color: #669ec0;
+}
+
+.btn-search:active {
+	background-color: #5496bd;
+	color: #88b6d1;
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------------ FOOTER ------------------------------ */
 
 footer {
     background-color: #ffffff;
@@ -592,15 +645,19 @@ footer {
     line-height: 26px;
 }
 
-/*   -----------------------------  HOTELS.html   ----------------------------- */
+/* ---------- HOVER / ACTIVE ---------- */
 
-/*   -----------------------------  Меню поиска   ----------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------ HOTELS.html ------------------------------ */
+
+/* ------------------------------ SEARCH MENU ------------------------------ */
 
 .search-test {
     background-image: url('../img/Hotels-Banner.jpg');
     background-repeat: no-repeat;
-	
-	padding-bottom: 9px;
     
     font-size: 0px;
     line-height: 0px;
@@ -613,6 +670,7 @@ footer {
     display: inline-block;
     margin: 0px;
     padding: 0px;
+	padding-bottom: 9px;
 	
     vertical-align: top;
     
@@ -637,7 +695,7 @@ footer {
 	width: 483px;
 }
 
-/*   --------- Инпуты инпутики, чекбоксы чекбоксики ------------------ */
+/* ------------------------------ INPUT/CHECKBOX CEARCH ------------------------------ */
 
 .search-test legend {
 	padding-top: 25px;
@@ -646,7 +704,6 @@ footer {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 21px;
-	
 }
 
 input[type="checkbox"] {
@@ -674,6 +731,7 @@ input[type="checkbox"] {
 	
 	width: 20px;
 	height: 20px;
+	
 	font-family: "symbols-sedona";
 	font-size: 26px;
 	line-height: 26px;
@@ -683,8 +741,20 @@ input[type="checkbox"]:checked + label::before {
 	content: '\2611';
 }
 
+input[disabled] + label::before,
+input[disabled] + label {
+	content: '\2610';
+	color: #6a6a6a;
+}
 
-/*   --------- Фильтр Строимости ------------------ */
+input[disabled]:checked + label::before,
+input[disabled]:checked + label {
+	content: '\2611';
+	color: #6a6a6a;
+}
+
+
+/* ------------------------------ COST FILTER ------------------------------ */
 
 .cost-header {
 	margin-top: 25px;
@@ -816,7 +886,7 @@ input[type="checkbox"]:checked + label::before {
 	background: #ffffff;
 }
 
-/*   -----------------------------  RESILTS MENU    ----------------------------- */
+/* ------------------------------ RESILTS MENU ------------------------------ */
 
 .results-menu {
 	border-bottom: 1px solid #e5e5e5;
@@ -876,11 +946,37 @@ input[type="checkbox"]:checked + label::before {
 	line-height: 21px;
 }
 
-/*   -----------------------------  Список найденного    ----------------------------- */
+/* ---------- HOVER / ACTIVE ---------- */
 
-.results {
-	
+.results-menu a {
+	border-bottom: 2px dotted #81b3d2;
+	color: #cacaca;
 }
+
+.results-menu a:hover {
+	color: #81b3d2;
+}
+
+.results-menu a:active {
+	border: none;
+	color: #000000;
+}
+
+.results-menu .active {
+	border: none;
+	color: #81b3d2;
+}
+
+.results-menu .active:active {
+	border: none;
+	color: #81b3d2;
+}
+
+.reverse-results-list a {
+	border: none;
+}
+
+/* ------------------------------ RESULTS LIST ------------------------------ */
 
 .results-item {
     padding-top: 30px;
@@ -981,3 +1077,30 @@ input[type="checkbox"]:checked + label::before {
 	background-color: #f2f2f2;
 }
 
+/* ---------- HOVER / ACTIVE ---------- */
+
+.name:hover {
+	color: #81b3d2;
+}
+
+.name:active {
+	color: #cacaca;
+}
+
+.results-detail .detail:hover {
+	background-color: #669ec0;
+}
+
+.results-detail .detail:active {
+	background-color: #5496bd;
+	color: #88b6d1;
+}
+
+.results-detail .reserve:hover {
+	background-color: #604e43;
+}
+
+.results-detail .reserve:active {
+	background-color: #503e33;
+	color: #857871;
+}
