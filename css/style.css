@@ -613,7 +613,6 @@ label span {
 	background-repeat: no-repeat;
 	
 	height: 593px;
-
 }
 
 .footer-container {
@@ -645,56 +644,70 @@ label span {
 
 .social-btn {
     display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
     width: 45px;
     height: 48px;
-    margin: 0px;
+	
     margin-top: 36px;
     margin-bottom: 36px;
     margin-left: 3px;
     margin-right: 3px;
-    padding: 0px;
-    
+	padding-top: 12px;
+
     background-color: #81b3d2;
+	
+	color: #ffffff;
+	font-size: 23px;
+	line-height: 20px;
 }
 
-.social-btn-tw {
-    background-image: url('../img/social-sprite.png');
-    background-repeat: no-repeat;
-    background-position: -75px 5px;
-}
-
-.social-btn-fb {
-    background-image: url('../img/social-sprite.png');
-    background-repeat: no-repeat;
-    background-position: 1px 1px; 
-}
-
-.social-btn-YT {
-    background-image: url('../img/social-sprite.png');
-    background-repeat: no-repeat;
-    background-position: -37px 5px; 
-}
-
-.footer-copyright {
-    vertical-align: middle;
-    background-image: url('../img/Academy-Logo.png');
-    background-repeat: no-repeat;
-    background-position: 64% 50%;
-}
-
-.footer-copyright span {
+.footer-copyright a {
     display: block;
-    width: 200px;
-    margin-left: 40px;
-
+	width: 195px;
+	height: 34px;
+	
+	position: relative;
+	
+	margin: auto;
+	padding-top: 6px;
+	
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
+	text-align: left;
+}
+
+.academy-logo {
+	display: block;
+	width: 113px;
+	height: 39px;
+	
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	
+    background-image: url('../img/Academy_Logo.png');
 }
 
 /* ---------- HOVER / ACTIVE ---------- */
 
+.social-btn:hover {
+	background-color: #669ec0;
+}
 
+.social-btn:active {
+	background-color: #5496bd;
+	color: #88b6d1;
+}
+
+.academy-logo:hover {
+	background-image: url('../img/Academy_Logo_HVR.png');
+}
+
+.academy-logo:active {
+	background-image: url('../img/Academy_Logo_DOWN.png');
+}
 
 /* ------------------------------------------------------------------------- */
 
@@ -799,7 +812,6 @@ input[disabled]:checked + label {
 	content: '\2611';
 	color: #6a6a6a;
 }
-
 
 /* ------------------------------ COST FILTER ------------------------------ */
 
