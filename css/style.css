@@ -634,7 +634,7 @@ label span {
 
 .footer-map {
 	background-color: #ffffff;
-	background-image: url('../img/Sedona-map.jpg');
+	background-image: url('../img/sedona-map.jpg');
 	background-repeat: no-repeat;
 	
 	height: 593px;
@@ -712,7 +712,7 @@ label span {
 	right: 0px;
 	top: 0px;
 	
-    background-image: url('../img/Academy_Logo.png');
+    background-image: url('../img/academy-logo.png');
 }
 
 /* ---------- HOVER / ACTIVE ---------- */
@@ -727,11 +727,11 @@ label span {
 }
 
 .academy-logo:hover {
-	background-image: url('../img/Academy_Logo_HVR.png');
+	background-image: url('../img/academy-logo-hvr.png');
 }
 
 .academy-logo:active {
-	background-image: url('../img/Academy_Logo_DOWN.png');
+	background-image: url('../img/academy-logo-down.png');
 }
 
 /* ------------------------------------------------------------------------- */
@@ -741,7 +741,7 @@ label span {
 /* ------------------------------ SEARCH MENU ------------------------------ */
 
 .search-test {
-    background-image: url('../img/Hotels-Banner.jpg');
+    background-image: url('../img/hotels-banner.jpg');
     background-repeat: no-repeat;
     
     font-size: 0px;
