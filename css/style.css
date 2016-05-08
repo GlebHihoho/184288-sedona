@@ -410,7 +410,6 @@ h2 {
 
 .search-footer {
     height: 473px;
-
 }
 
 .search-menu-conteiner {
@@ -433,6 +432,8 @@ h2 {
 	display: block;
 	animation-name: scale-1;
 	animation-duration: 0.6s;
+	position: relative;
+	z-index: 50;
 }
 
 @keyframes scale-1 {
@@ -447,30 +448,7 @@ h2 {
 	}
 }
 
-/*
-.search-menu-conteiner-hide {
-	display: block;
-	animation-name: scale-2;
-	animation-duration: 0.6s;
-	animation-fill-mode: forwards;
-}
-*/
-
-/*
-@keyframes scale-2 {
-	0% {
-		transform: scale(1);
-	}
-	30% {
-		transform: scale(1.05);
-	}
-	100% {
-		transform: scale(0);
-	}
-}
-*/
-
-/* ------------------------------------ */
+/* ------------------------------ */
 
 .search-menu-conteiner input[type="text"] {
     border: 0px;
@@ -638,10 +616,23 @@ label span {
 	background-repeat: no-repeat;
 	
 	height: 593px;
+	
+	position: relative;
 }
+
+/* ---------- GOOGLE MAP ---------- */
+
+.google-map {
+	position: absolute;
+	top: 0px;
+}
+
+/* -------------------------------- */
 
 .footer-container {
     background-color: rgba(255, 255, 255, 0.9);
+	
+	position: relative;
 }
 
 .footer-hashtag,
