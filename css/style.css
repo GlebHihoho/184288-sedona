@@ -732,6 +732,7 @@ label span {
 /* ------------------------------ SEARCH MENU ------------------------------ */
 
 .search-test {
+	background-color: #669ec0;
     background-image: url('../img/hotels-banner.jpg');
     background-repeat: no-repeat;
     
