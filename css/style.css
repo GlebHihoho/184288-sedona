@@ -430,21 +430,41 @@ h2 {
 
 .search-menu-conteiner-show {
 	display: block;
-	animation-name: scale-1;
-	animation-duration: 0.6s;
+	-webkit-animation-name: scale-1;
+	        animation-name: scale-1;
+	-webkit-animation-duration: 0.6s;
+	        animation-duration: 0.6s;
 	position: relative;
 	z-index: 50;
 }
 
-@keyframes scale-1 {
+@-webkit-keyframes scale-1 {
 	0% {
-		transform: scale(0);
+		-webkit-transform: scale(0);
+		        transform: scale(0);
 	}
 	70% {
-		transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		        transform: scale(1.05);
 	}
 	100% {
-		transform: scale(1);
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@keyframes scale-1 {
+	0% {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	70% {
+		-webkit-transform: scale(1.05);
+		        transform: scale(1.05);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
 }
 
@@ -859,7 +879,9 @@ input[disabled]:checked + label {
 	height: 22px;
 
 	background: #ffffff;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .price-controls label {
