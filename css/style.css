@@ -669,12 +669,12 @@ label span {
     margin-bottom: 36px;
     margin-left: 3px;
     margin-right: 3px;
-	padding-top: 12px;
+	padding-top: 14px;
 
     background-color: #81b3d2;
 	
 	color: #ffffff;
-	font-size: 23px;
+	font-size: 20px;
 	line-height: 20px;
 }
 
@@ -759,13 +759,8 @@ label span {
 }
 
 .infrastructure {
-	width: 240px;
+	width: 255px;
 	padding-left: 73px;
-}
-
-.infrastructure legend,
-.property-type legend {
-	margin-left: -3px;
 }
 
 .property-type {
@@ -775,8 +770,8 @@ label span {
 /* ------------------------------ INPUT/CHECKBOX CEARCH ------------------------------ */
 
 .search-test legend {
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 27px;
+	padding-bottom: 23px;
 	
 	font-size: 16px;
 	font-weight: 700;
@@ -833,8 +828,9 @@ input[disabled]:checked + label {
 /* ------------------------------ COST FILTER ------------------------------ */
 
 .cost-header {
-	margin-top: 25px;
-	margin-bottom: 9px;
+	margin-top: 27px;
+	margin-bottom: 10px;
+	margin-left: -10px;
 
 	font-weight: 600;
 	font-size: 16px;
@@ -844,7 +840,7 @@ input[disabled]:checked + label {
 .price-controls {
 	position: relative;
 	
-	height: 36px;
+	height: 32px;
 	margin-bottom: 20px;
 
 	font-size: 0;
@@ -870,7 +866,7 @@ input[disabled]:checked + label {
 	display: inline-block;
 
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 30px;
 	vertical-align: top;
 
 	cursor: pointer;
@@ -878,8 +874,13 @@ input[disabled]:checked + label {
 
 .price-controls .min-price,
 .price-controls .max-price {
-	width: 90px;
+	width: 92px;
 	padding-left: 65px;
+}
+
+.price-controls .max-price {
+	padding-right: 10px;
+	padding-left: 55px;
 }
 
 .price-controls input {
@@ -941,7 +942,7 @@ input[disabled]:checked + label {
 
 .btn-transparent {
 	display: block;
-	margin: 0 auto;
+	margin-left: 85px;
 	padding: 6px 35px;
 
 	font-size: 14px;
@@ -977,7 +978,7 @@ input[disabled]:checked + label {
 	
 	padding-left: 73px;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 29px;
 	
 	font-size: 21px;
 	line-height: 26px;
@@ -985,8 +986,11 @@ input[disabled]:checked + label {
 
 .sorting-results {
 	display: inline-block;
+	vertical-align: top;
 	
 	width: 80px;
+	margin-top: 35px;
+	padding-left: 2px;
 	padding-right: 35px;
 
 	font-size: 12px;
@@ -995,9 +999,11 @@ input[disabled]:checked + label {
 
 .sorting-results-list {
 	display: inline-block;
+	vertical-align: top;
 	
 	width: 665px;
 	margin: 0px;
+	margin-top: 35px;
 	padding: 0px;
 	
 	font-size: 12px;
@@ -1006,26 +1012,30 @@ input[disabled]:checked + label {
 
 .sorting-results-list li {
 	display: inline-block;
-	
 	padding-right: 30px;
 }
 
 .reverse-results-list {
 	display: inline-block;
-	width: 180px;
-
-	text-align: center;
+	vertical-align: top;
+	
+	margin-top: 33px;
+	margin-left: 62px;
+	
+	font-size: 0px;
+	line-height: 0px;
 }
 
-.reverse-results-list a {
-	font-size: 19px;
+.reverse-results-list span {
+	width: 5px;
+	font-size: 21px;
 	line-height: 21px;
 }
 
 /* ---------- HOVER / ACTIVE ---------- */
 
 .results-menu a {
-	border-bottom: 2px dotted #81b3d2;
+	border-bottom: 1px dotted #81b3d2;
 	color: #cacaca;
 }
 
@@ -1068,12 +1078,13 @@ input[disabled]:checked + label {
 
 	margin-left: 73px;
 	margin-right: 30px;
-	margin-bottom: 16px;
+	margin-bottom: 17px;
 	
 }
 
 .results-description {
 	display: inline-block;
+	vertical-align: top;
 	width: 962px;
 	
 	vertical-align: top;
@@ -1094,7 +1105,7 @@ input[disabled]:checked + label {
 
 .stars {
 	float: right;
-	padding-right: 70px;
+	padding-right: 65px;
 	font-size: 0px;
 }
 
@@ -1113,6 +1124,9 @@ input[disabled]:checked + label {
 
 .results-class span {
 	display: inline-block;
+	vertical-align: top;
+	padding-top: 2px;
+	padding-bottom: 3px;
 	width: 100px;
 	margin-right: 16px;
 	
@@ -1126,8 +1140,8 @@ input[disabled]:checked + label {
 .btn {
 	padding-left: 17px;
 	padding-right: 17px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 
 .results-detail a {
