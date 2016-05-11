@@ -522,6 +522,11 @@ h2 {
 	background-color: #ebebeb;
 }
 
+.search-menu-conteiner input[type="text"]:focus {
+	background-color: #ebebeb;
+	outline: 2px solid #81b3d2;
+}
+
 .search-menu-conteiner input[type="text"]:active {
 	background-color: #ffffff;
 }
