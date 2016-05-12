@@ -1,53 +1,52 @@
 body {
-    width: auto;
-    
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    
-    font-family: 'PT Sans', Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
+	width: auto;
+	
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
 	line-height: 26px;
-    text-transform: uppercase;
-    
-    color: #000000;
-    background-color: #f2f2f2;
+	text-transform: uppercase;
+	
+	color: #000000;
+	background-color: #f2f2f2;
 }
 
 a {
-    color: #000000;
-    text-decoration: none;
+	color: #000000;
+	text-decoration: none;
 }
 
 h1 {
-    font-size: 21px;
-    line-height: 26px;
+	font-size: 21px;
+	line-height: 26px;
 }
 
 h2 {
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: bold;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: bold;
 }
 
 .conteiner {
-    width: 1200px;
-    
-    margin-left: auto;
-    margin-right: auto;
-    
-    background-color: #ffffff; 
-    box-shadow: 
-        -5px -5px 5px #dbdbdb,
-        5px 5px 5px #dbdbdb;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: #ffffff; 
+	box-shadow:
+		-5px -5px 5px #dbdbdb,
+ 		5px 5px 5px #dbdbdb;
 }
 
 /* ------------------------------ CLEARFIX  ------------------------------ */
 
 .clearfix::after {
-    content: '';
+    content: "";
     display: table;
     clear: both;
 }
@@ -111,6 +110,7 @@ h2 {
 
 .header-conteiner li {
     display: inline-block;
+	vertical-align: top;
     box-sizing: border-box;
     
     width: 20%;
@@ -166,8 +166,10 @@ h2 {
 	z-index: 10;
 }
 
-.main-banner:before {
-	content: 'Sedona';
+/* ---------- ПУ - на случай пропажи картинки ---------- */
+
+.main-banner::before {
+	content: "Sedona";
 	position: absolute;
 	display: block;
 	
@@ -275,7 +277,8 @@ h2 {
 }
 
 .description > .item {
-	display: table-cell;
+	display: inline-block;
+	vertical-align: top;
 	width: 400px;
 	
     text-align: center;
@@ -300,21 +303,21 @@ h2 {
 }
 
 .home {
-    background-image: url('../img/home.png');
+    background-image: url("../img/home.png");
     background-repeat: no-repeat;
     background-size: 75px 72px;
     background-position: 50% 25%;
 }
 
 .food {
-    background-image: url('../img/food.png');
+    background-image: url("../img/food.png");
     background-repeat: no-repeat;
     background-size: 74px 70px;
     background-position: 50% 25%;
 }
 
 .gift {
-    background-image: url('../img/gift.png');
+    background-image: url("../img/gift.png");
     background-repeat: no-repeat;
     background-size: 64px 76px;
     background-position: 50% 25%;
@@ -330,7 +333,8 @@ h2 {
 }
 
 .item-footer {
-    display: table-cell;
+    display:inline-block;
+	vertical-align: top;
     width: 400px;
 }
 
@@ -507,6 +511,8 @@ h2 {
 	padding-bottom: 7px;
 	padding-left: 15px;
 	padding-right: 50px;
+	
+	vertical-align: middle;
 }
 
 .icon-calendar {
@@ -537,6 +543,7 @@ h2 {
 .child {
     width: 230px;
     display: inline-block;
+	vertical-align: top;
     margin-left: 55px;
     
     position: relative;
@@ -561,6 +568,7 @@ h2 {
 	padding-bottom: 7px;
     
     text-align: center;
+	vertical-align: middle;
 }
 
 /* ------------------------------ PLUS +/- MINUS ------------------------------ */
@@ -637,7 +645,7 @@ label span {
 
 .footer-map {
 	background-color: #ffffff;
-	background-image: url('../img/sedona-map.jpg');
+	background-image: url("../img/sedona-map.jpg");
 	background-repeat: no-repeat;
 	
 	height: 593px;
@@ -728,7 +736,7 @@ label span {
 	right: 0px;
 	top: 0px;
 	
-    background-image: url('../img/academy-logo.png');
+    background-image: url("../img/academy-logo.png");
 }
 
 /* ---------- HOVER / ACTIVE ---------- */
@@ -743,11 +751,11 @@ label span {
 }
 
 .academy-logo:hover {
-	background-image: url('../img/academy-logo-hvr.png');
+	background-image: url("../img/academy-logo-hvr.png");
 }
 
 .academy-logo:active {
-	background-image: url('../img/academy-logo-down.png');
+	background-image: url("../img/academy-logo-down.png");
 }
 
 /* ------------------------------------------------------------------------- */
@@ -758,7 +766,7 @@ label span {
 
 .search-test {
 	background-color: #669ec0;
-    background-image: url('../img/hotels-banner.jpg');
+    background-image: url("../img/hotels-banner.jpg");
     background-repeat: no-repeat;
     
     font-size: 0px;
@@ -769,18 +777,17 @@ label span {
 .infrastructure,
 .property-type,
 .cost {
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px;
+	padding: 0px;
 	padding-bottom: 9px;
 	
-    vertical-align: top;
-    
-    border: none;
-    
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
+	border: none;
+	
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
 }
 
 .infrastructure {
@@ -821,7 +828,7 @@ input[type="checkbox"] {
 
 .infrastructure label::before,
 .property-type label::before {
-	content: '\2610';
+	content: "\2610";
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -835,18 +842,18 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + label::before {
-	content: '\2611';
+	content: "\2611";
 }
 
 input[disabled] + label::before,
 input[disabled] + label {
-	content: '\2610';
+	content: "\2610";
 	color: #6a6a6a;
 }
 
 input[disabled]:checked + label::before,
 input[disabled]:checked + label {
-	content: '\2611';
+	content: "\2611";
 	color: #6a6a6a;
 }
 
@@ -891,10 +898,10 @@ input[disabled]:checked + label {
 
 .price-controls label {
 	display: inline-block;
+	vertical-align: top;
 
 	font-size: 14px;
 	line-height: 30px;
-	vertical-align: top;
 
 	cursor: pointer;
 }
@@ -903,6 +910,8 @@ input[disabled]:checked + label {
 .price-controls .max-price {
 	width: 92px;
 	padding-left: 65px;
+	
+	vertical-align: middle;
 }
 
 .price-controls .max-price {
@@ -1000,6 +1009,7 @@ input[disabled]:checked + label {
 
 .number-results {
 	display: inline-block;
+	vertical-align: top;
 	
 	width: 162px;
 	
@@ -1039,6 +1049,7 @@ input[disabled]:checked + label {
 
 .sorting-results-list li {
 	display: inline-block;
+	vertical-align: top;
 	padding-right: 30px;
 }
 
@@ -1106,15 +1117,12 @@ input[disabled]:checked + label {
 	margin-left: 73px;
 	margin-right: 30px;
 	margin-bottom: 17px;
-	
 }
 
 .results-description {
 	display: inline-block;
 	vertical-align: top;
 	width: 962px;
-	
-	vertical-align: top;
 	
 	font-size: 14px;
 	font-weight: 600;
